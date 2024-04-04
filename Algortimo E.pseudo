@@ -1,0 +1,20 @@
+1. Declarar variables a, b, c como enteros
+2. Leer a desde el teclado
+3. Leer b desde el teclado
+4. Leer c desde el teclado
+5. Si a >= b y a >= c entonces
+6.     Si b >= c entonces
+7.         Escribir a, b, c
+8.     Sino
+9.         Escribir a, c, b
+10. Sino si b >= a y b >= c entonces
+11.    Si a >= c entonces
+12.        Escribir b, a, c
+13.    Sino
+14.        Escribir b, c, a
+15. Sino
+16.    Si a >= b entonces
+17.        Escribir c, a, b
+18.    Sino
+19.        Escribir c, b, a
+
