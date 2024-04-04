@@ -1,6 +1,6 @@
 //Algoritmo SumaImpares (Algoritmo D)
 
-    Definir suma, numero Como Entero
+Definir suma, numero Como Entero
     suma <- 0
     Escribir "Ingrese números enteros. Ingrese 0 para finalizar."
     Leer numero
