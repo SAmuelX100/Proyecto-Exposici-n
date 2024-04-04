@@ -1,0 +1,27 @@
+//Algoritmo Comparación Matrices
+
+1. Leer las dimensiones de las matrices A y B (filasA, columnasA, filasB, columnasB)
+2. Si las dimensiones de A y B no son iguales entonces
+3.     Escribir "Las dimensiones de las matrices no son iguales."
+4.     Detener el algoritmo
+5. Declarar una variable igual a 1 llamada resultado
+6. Declarar matriz A de dimensiones filasA x columnasA
+7. Declarar matriz B de dimensiones filasB x columnasB
+8. Para cada fila i desde 1 hasta filasA hacer
+9.     Para cada columna j desde 1 hasta columnasA hacer
+10.        Escribir "Ingrese el elemento A[" + i + "][" + j + "]: "
+11.        Leer A[i][j] desde el teclado
+12. Para cada fila i desde 1 hasta filasB hacer
+13.     Para cada columna j desde 1 hasta columnasB hacer
+14.        Escribir "Ingrese el elemento B[" + i + "][" + j + "]: "
+15.        Leer B[i][j] desde el teclado
+16. Si filasA es diferente de filasB o columnasA es diferente de columnasB entonces
+17.     Escribir "Las dimensiones de las matrices no son iguales."
+18.     Detener el algoritmo
+19. Para cada fila i desde 1 hasta el número de filas de A hacer
+20.     Para cada columna j desde 1 hasta el número de columnas de A hacer
+21.         Si A[i][j] es diferente de B[i][j] entonces
+22.             Asignar 0 a la variable resultado
+23.             Salir del bucle interno
+24.     Salir del bucle externo
+25. Escribir el valor de la variable resultado
