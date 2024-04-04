@@ -6,17 +6,20 @@ int main() {
     int suma = 0;
     int numero;
 
-    cout << "Ingrese números enteros. Ingrese 0 para finalizar: " ;
+    cout << " >> Ingrese numeros enteros. Ingrese 0 para finalizar: " ;
     cin >> numero;
 
     while (numero != 0) {
+        
         if (numero % 2 != 0) {
             suma += numero;
         }
-        std::cin >> numero;
+
+        cout << " >> Ingrese numeros enteros. Ingrese 0 para finalizar: " ;
+        cin >> numero;
     }
 
-    cout << "La suma de los números impares ingresados es: " << suma << endl;
+    cout << " >> La suma de los numeros impares ingresados es: " << suma << endl;
 
     system("pause");
 
