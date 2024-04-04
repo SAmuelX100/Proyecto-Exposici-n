@@ -1,0 +1,14 @@
+//Algoritmo SumaImpares (Algoritmo D)
+
+    Definir suma, numero Como Entero
+    suma <- 0
+    Escribir "Ingrese números enteros. Ingrese 0 para finalizar."
+    Leer numero
+    Mientras numero <> 0 Hacer
+        Si numero MOD 2 <> 0 Entonces
+            suma <- suma + numero
+        FinSi
+        Leer numero
+    FinMientras
+    Escribir "La suma de los números impares ingresados es:", suma
+FinAlgoritmo
