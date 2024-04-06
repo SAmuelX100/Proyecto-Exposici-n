@@ -1,0 +1,20 @@
+// Algoritmo EncontrarMinimoRecursivo (Algoritmo H)
+    // Función recursiva para encontrar el mínimo en una sucesión
+    Función EncontrarMinimo(sucesion: Arreglo de números reales, indice: Entero) -> Real
+        Si indice = 0 Entonces
+            Devolver sucesion[indice] // Caso base: primer elemento
+        Fin Si
+
+        minimoAnterior <- EncontrarMinimo(sucesion, indice - 1)
+        Devolver Mínimo(sucesion[indice], minimoAnterior)
+    Fin Función
+
+    // Inicializar datos de la sucesión (puedes ingresarlos manualmente o mediante algún método)
+
+    sucesion <- [5.2, 3.8, 7.1, 2.5, 4.9] // Ejemplo de sucesión
+
+    // Llamada inicial a la función recursiva
+    minimo <- EncontrarMinimo(sucesion, tamaño(sucesion) - 1)
+
+    Escribir "El mínimo de la sucesión es:", minimo
+Fin Algoritmo
