@@ -1,0 +1,42 @@
+//Empleado (Algoritmo G)
+
+//Estructura de Empleado
+
+Estructura Empleado:
+    Entero numeroSeguroSocial
+    Entero edad
+    Real salario
+Fin Estructura
+
+// Algoritmo para Procesar los Empleados
+
+Algoritmo GenerarDatosEmpleados
+    Definir fábrica como Arreglo de Empleado
+    Definir sumaEdades como Real
+    Definir contadorEmpleados como Entero
+    Definir edadPromedio como Real
+    Definir sumaSalarios como Real
+    Definir contadorMayores30 como Entero
+
+    // Inicializar datos de empleados en la fábrica (puedes ingresarlos manualmente o mediante algún método)
+
+    Para cada empleado en fábrica:
+        Si empleado.edad > 30 Entonces
+            Escribir "Número de Seguridad Social:", empleado.numeroSeguroSocial
+            contadorMayores30 <- contadorMayores30 + 1
+        Fin Si
+
+        sumaEdades <- sumaEdades + empleado.edad
+        sumaSalarios <- sumaSalarios + empleado.salario
+        contadorEmpleados <- contadorEmpleados + 1
+    Fin Para
+
+    Si contadorEmpleados > 0 Entonces
+        edadPromedio <- sumaEdades / contadorEmpleados
+        Escribir "Edad promedio de empleados:", edadPromedio
+        Escribir "Número de empleados mayores a 30 años:", contadorMayores30
+        Escribir "Salario total de empleados:", sumaSalarios
+    Sino
+        Escribir "No hay empleados en la fábrica."
+    Fin Si
+Fin Algoritmo
